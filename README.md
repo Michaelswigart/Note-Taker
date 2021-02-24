@@ -1,2 +1,2 @@
 # Note-Taker
-when you forget thing and need to take notes
+when you forget something thing and need to take notes
