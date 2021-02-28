@@ -32,7 +32,7 @@
   ## Questions
    If you have any questions reach me @ 
    Email : [sherlockholmes.swigart92@gmail.com](mailto:sherlockholmes.swigart92@gmail.com)
-   Github : [Michaelswigart](https://github.com/sherlockholmes.swigart92@gmail.com)
+   Github : [Michaelswigart](https://github.com/Michaelswigart)
   
   ## Technologies utilized
   
