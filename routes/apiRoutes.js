@@ -3,6 +3,7 @@ const notes = require('../db/db.json');
 const { v4: uuidv4 } = require('uuid');
 const fs = require('fs');
 const path = require('path');
+const { ESRCH } = require('constants');
 module.exports = (app) => {
     // API GET Requests
     // Below code handles when users "visit" a page.
@@ -49,11 +50,24 @@ module.exports = (app) => {
     app.delete('/api/notes/:id', (req, res) => {
       // (1) Get the ID of the note to delete from the request parameter
       // and assign it to a local variable (hint: req.params)
-
+      fs.readFile('../db/db.json', "utf-8", (err,data)=>{
+        let db = JSON.parse(data);
+        db.splice(req.params.id, 1);
+        let reindex_db = db.map((curentElemnt,index)=>{
+          curentElemnt = {...curentElemnt, id:index};
+          return curentElemnt
+        })
+        fs.writeFile('../db/db.json', JSON.stringify(reindex_db),err =>{
+          if(err){
+            throw err;
+          } else {
+            res.send('ok')
+          }
+        });
+      }); 
+     
       // (2) Use notes.findIndex() to locate the note to delete using the ID
       // (hint: notes.findIndex((note) => note.id === <your local variable>))
 
       // (3) Delete the note from the notes array using notes.splice(<index>, 1)
-    });
-};
-  
+ })} 
