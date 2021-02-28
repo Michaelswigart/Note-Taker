@@ -10,6 +10,7 @@
   * [Contribution](#contribution)
   * [Images](#Images)
   * [Questions](#questions)
+  * [Technologies utilized](#Technologies utilized)
   ## Installation
   To install dependencies, run the below command :
     click the button
@@ -33,6 +34,9 @@
    Email : [sherlockholmes.swigart92@gmail.com](mailto:sherlockholmes.swigart92@gmail.com)
    Github : [Michaelswigart](https://github.com/sherlockholmes.swigart92@gmail.com)
   
+  ## Technologies utilized
+  
 # Note-Taker
 when you forget something thing and need to take notes
 https://note-taker2354.herokuapp.com/
+https://github.com/Michaelswigart/Note-Taker
