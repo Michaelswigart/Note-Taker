@@ -35,6 +35,10 @@
    Github : [Michaelswigart](https://github.com/Michaelswigart)
   
   ## Technologies utilized
+      Express.js    
+      Node.js
+     jsonfile.js Bootstrap
+     Nodemon.js
   
 # Note-Taker
 when you forget something thing and need to take notes
