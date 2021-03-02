@@ -39,7 +39,9 @@ module.exports = (app) => {
       
       // (3) Save the contents of 'notes' back to the db/db.json file,
       // so that the new note is saved permanently
-      fs.writeFile(path.join(__dirname, '../db/db.json', JSON.stringify(notes)));
+      fs.writeFile(path.join(__dirname, '../db/db.json'), JSON.stringify(notes), (err) => { 
+        if (err) console.log(err);
+      });
     
       // (4) Return the new note object back to the client as part of the 
       // response.
