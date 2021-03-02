@@ -141,11 +141,11 @@ const renderNoteList = async (notes) => {
         'fa-trash-alt',
         'float-right',
         'text-danger',
-        'delete-note'
+        // 'delete-note'
       );
       delBtnEl.addEventListener('click', handleNoteDelete);
 
-      liEl.append(delBtnEl);
+      // liEl.append(delBtnEl);
     }
 
     return liEl;
