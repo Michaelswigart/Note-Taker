@@ -26,7 +26,7 @@
     
   
   ## Contribution
-     Michael Swigart, Makenzie,
+     Michael Swigart, Makenzie, Mahesh
      
   ## Questions
    If you have any questions reach me @ 
